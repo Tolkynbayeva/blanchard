@@ -1,37 +1,132 @@
-.aside {
+.section__submenu {
   margin-bottom: 80px;
-  background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.png);
+  /* background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.png); */
   background-repeat: no-repeat;
 }
 
-.aside-nav {
+.submenu__nav {
   margin-bottom: 62px;
-  padding-top: 23px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 18px;
   display: flex;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.5);
-  text-align: center;
 }
 
-.aside-select {
+
+.submenu-item:not(:last-child) {
+  margin-right: 100px;
+}
+
+/* .submenu-item {
+  position: relative;
+} */
+
+.submenu-button {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.submenu__heading {
+  margin-right: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.arrow {
+  display: inline-block;
+  align-self: center;
+  border: solid var(--color-white);
+  border-width: 0 1px 1px 0;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropdown__nav {
+  position: relative;
+  /* width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5); */
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 17px;
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item {
+  width: 220px;
+  height: 40px;
+  padding-left: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-white);
+  background-repeat: no-repeat;
+}
+
+.bar {
+  position: relative;
+}
+
+.bar__line {
+  position: absolute;
+  top: 56px;
+  left: 277px;
+  width: 2px;
+  height: 220px;
+  background-color: #000;
+
+}
+
+.dropdown-tintoretto {
+  background-image: url(../img/submenu_Tintoretto.png);
+}
+
+.dropdown-fridrih {
+  background-image: url(../img/submenu_Fridrif.png);
+}
+
+.dropdown-leonardo {
+  background-image: url(../img/submenu_Leonardo.png);
+}
+
+.dropdown-verrokkyo {
+  background-image: url(../img/submenu_Verrokkyu.png);
+}
+
+/* .submenu-select {
   font-size: 18px;
   line-height: 25px;
   border: none;
   background-color: transparent;
   color: rgba(255, 255, 255, 1);
-}
+} */
 
-.aside-select:not(:last-child) {
+/* .aside-select:not(:last-child) {
   margin-right: 96px;
-}
+} */
 
 
-.aside-button_nav {
+.submenu-button_nav {
   width: 22px;
-  height: 20px;
+  height: 21px;
   margin-right: 7px;
-  background: url(../img/aside_nav_search.svg) no-repeat;
+  background: url(../img/svg/aside_nav_search.svg) no-repeat;
   border: none;
 }
 
@@ -46,25 +141,25 @@
 }
 
 
-.aside-descr {
+.submenu-descr {
   max-width: 597px;
   color: var(--color-white);
 }
 
-.aside-heading {
+.submenu-heading {
   font-weight: 700;
   font-size: 72px;
   line-height: 98px;
 }
 
-.aside-text {
+.submenu-text {
   margin-bottom: 90px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
 
-.aside-button_descr {
+.submenu-button_descr {
   margin-bottom: 122px;
   padding: 22px 35px;
   font-weight: 700;

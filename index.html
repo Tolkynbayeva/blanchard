@@ -56,66 +56,108 @@
     </div>
   </header>
 
-  <!--aside-->
-  <aside class="aside">
-    <div class="aside-gallery">
-      <div class="container aside-nav">
-        <div class="aside-select">
-          <select class="aside-select" name="select">
-            <option value="">Реализм</option>
-            <option value="">Тинторетто</option>
-            <option value="">Фридрих</option>
-            <option value="">Леонардо</option>
-            <option value="">Верроккьо</option>
-          </select>
-          <select class="aside-select" name="select">
-            <option value="">Импрессионизм</option>
-            <option value="">Моне</option>
-            <option value="">Сислей</option>
-            <option value="">Мане</option>
-            <option value="">Ренуар</option>
-          </select>
-          <select class="aside-select" name="select">
-            <option value="">Постимпрессионизм</option>
-            <option value="">Ван Гог</option>
-            <option value="">Сезанн</option>
-            <option value="">Гоген</option>
-            <option value="">Сёра</option>
-          </select>
-          <select class="aside-select" name="select">
-            <option value="">Авангард</option>
-            <option value="">Кандинский</option>
-            <option value="">Маринетти</option>
-            <option value="">Малевич</option>
-            <option value="">Пикассо</option>
-          </select>
-          <select class="aside-select" name="select">
-            <option value="">Футуризм</option>
-            <option value="">Карра</option>
-            <option value="">Прателла</option>
-            <option value="">Северини</option>
-            <option value="">Балла</option>
-          </select>
-        </div>
+  <!--submenu-->
+  <section class="section__submenu">
+
+      <div class="container submenu__nav">
+        <ul class="submenu-list flex">
+          <li class="submenu-item">
+            <button class="submenu-button">
+              <h2 class="submenu__heading">Реализм</h2>
+              <span class="arrow down"></span>
+            </button>
+            <!-- <div class="dropdown__nav">
+              <ul class="dropdown-list">
+                <li class="dropdown-item dropdown-tintoretto">Тинторетто</li>
+                <li class="dropdown-item dropdown-fridrih">Фридрих</li>
+                <li class="dropdown-item dropdown-leonardo">Леонардо</li>
+                <li class="dropdown-item dropdown-verrokkyo">Верроккьо</li>
+              </ul>
+              <div class="dropdown__bar bar">
+                <span class="bar__line"></span>
+              </div>
+            </div> -->
+          </li>
+          <li class="submenu-item">
+            <button class="submenu-button">
+              <h2 class="submenu__heading">Импрессионизм</h2>
+              <span class="arrow down"></span>
+            </button>
+            <div class="dropdown__nav">
+              <ul class="dropdown-list">
+                <li class="dropdown-item">Моне</li>
+                <li class="dropdown-item">Сислей</li>
+                <li class="dropdown-item">Мане</li>
+                <li class="dropdown-item">Ренуар</li>
+              </ul>
+                <div class="dropdown__bar bar">
+                <span class="bar__line"></span>
+              </div>
+            </div>
+          </li>
+          <li class="submenu-item">
+            <button class="submenu-button">
+              <h2 class="submenu__heading">Постимпрессионизм</h2>
+              <span class="arrow down"></span>
+            </button>
+            <!-- <div class="dropdown__nav">
+              <ul class="dropdown-list">
+                <li class="dropdown-item">Ван Гог</li>
+                <li class="dropdown-item">Сезанн</li>
+                <li class="dropdown-item">Гоген</li>
+                <li class="dropdown-item">Сёра</li>
+              </ul>
+            </div> -->
+          </li>
+          <li class="submenu-item">
+            <button class="submenu-button">
+              <h2 class="submenu__heading">Авангард</h2>
+              <span class="arrow down"></span>
+            </button>
+            <!-- <div class="dropdown__nav">
+              <ul class="dropdown-list">
+                <li class="dropdown-item">Кандинский</li>
+                <li class="dropdown-item">Маринетти</li>
+                <li class="dropdown-item">Малевич</li>
+                <li class="dropdown-item">Пикассо</li>
+              </ul>
+            </div> -->
+          </li>
+          <li class="submenu-item">
+            <button class="submenu-button">
+              <h2 class="submenu__heading">Футуризм</h2>
+              <span class="arrow down"></span>
+            </button>
+            <!-- <div class="dropdown__nav">
+              <ul class="dropdown-list">
+                <li class="dropdown-item">Карра</li>
+                <li class="dropdown-item">Прателла</li>
+                <li class="dropdown-item">Северини</li>
+                <li class="dropdown-item">Балла</li>
+              </ul>
+            </div> -->
+          </li>
+        </ul>
         <form id="form-search" class="form-search">
-          <button id="aside-button_nav" class="aside-button_nav" aria-label="Поиск" type="submit"></button>
+          <button id="aside-button_nav" class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
           <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
         </form>
       </div>
+
+
       <div class="container">
-        <div class="aside-descr">
-          <h1 class="aside-heading">Прикоснитесь к прекрасному</h1>
-          <p class="aside-text">
+        <div class="submenu-descr">
+          <h1 class="submenu-heading">Прикоснитесь к прекрасному</h1>
+          <p class="submenu-text">
             Мы вынуждены отталкиваться от того, что реализация намеченных
             плановых заданий создаёт предпосылки для новых предложений
           </p>
-          <button class="btn aside-button_descr">
+          <button class="btn submenu-button_descr">
             Подписаться на рассылку
           </button>
         </div>
       </div>
-    </div>
-  </aside>
+  </section>
   <!--main-->
   <main class="main">
     <!--О нас-->
@@ -330,5 +372,6 @@
     </div>
   </main>
 </body>
+<script src="/script.js"></script>
 
 </html>
