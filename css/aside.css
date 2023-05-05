@@ -1,0 +1,77 @@
+.aside {
+  margin-bottom: 80px;
+  background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.png);
+  background-repeat: no-repeat;
+}
+
+.aside-nav {
+  margin-bottom: 62px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.aside-select {
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+}
+
+.aside-select:not(:last-child) {
+  margin-right: 96px;
+}
+
+
+.aside-button_nav {
+  width: 22px;
+  height: 20px;
+  margin-right: 7px;
+  background: url(../img/aside_nav_search.svg) no-repeat;
+  border: none;
+}
+
+.input-search {
+  width: 218px;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+
+.aside-descr {
+  max-width: 597px;
+  color: var(--color-white);
+}
+
+.aside-heading {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+}
+
+.aside-text {
+  margin-bottom: 90px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.aside-button_descr {
+  margin-bottom: 122px;
+  padding: 22px 35px;
+  font-weight: 700;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+
+
+

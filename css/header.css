@@ -1,0 +1,114 @@
+.header {
+  color: var(--color-white);
+}
+
+.header {
+  padding: 30px 0;
+  background: #000000;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header-burger {
+  display: none;
+}
+
+.header__left {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_header {
+  margin-right: 181px;
+}
+
+
+/* .header-nav {
+  display: flex;
+/*  width: 78%; */
+/*  margin-right: 235px; */
+} */
+
+.header-nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 413px; /* временно */
+}
+
+.nav-item:not(:last-child){
+  margin-right: 62px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-header-button {
+  width: 75px;
+  padding-left: 22px;
+  background: url(../img/Vector.svg) no-repeat;
+  background-position: 0;
+  font-size: 18px;
+  color: var(--color-white);
+  border: none;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 1680px) {
+  .header-nav {
+    margin-right: 0;
+  }
+
+  .nav-item:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-burger {
+    display: block;
+    width: 36px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    background-image: url(../img/Burger.svg);
+    background-color: transparent;
+  }
+
+  .header-burger.is-active {
+    background-image: url(../img/X_burger.svg);
+    background-repeat: no-repeat
+  }
+
+  .header-nav {
+    position: absolute;
+  /*  left: 0;
+    top: 68px; */
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    height: 702px;
+    z-index: 1000;
+    padding: 62px 106px 217px 50px;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    visibility: hidden;
+    transform: translateX(-420px);
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .header-nav__list.is-active {
+    visibility: visible;
+    transform: none;
+  }
+}
