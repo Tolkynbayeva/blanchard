@@ -59,7 +59,75 @@
   <!--submenu-->
   <section class="section__submenu">
 
-      <div class="container submenu__nav">
+    <div class="container submenu-nav">
+      <ul class="submenu-list">
+        <li class="dropdown">
+          <a class="dropdown-heading" href="#" data-toogle="dropdown">Реализм
+            <i class="icon-arrow"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item dropdown-tintoretto">
+              <a href="#" class="dropdown-link">Тинторетто</a>
+            </li>
+            <li class="dropdown-item dropdown-fridrih ">
+              <a href="#" class="dropdown-link">Фридрих</a>
+            </li>
+            <li class="dropdown-item dropdown-leonardo"><a href="#" class="dropdown-link">Леонардо</a></li>
+            <li class="dropdown-item dropdown-verrokkyo"><a href="#" class="dropdown-link">Верроккьо</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-heading" href="#" data-toogle="dropdown">Импрессионизм
+            <i class="icon-arrow"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Моне</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Сислей</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Мане</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Ренуар</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-heading" href="#" data-toogle="dropdown">Постимпрессионизм
+            <i class="icon-arrow"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Ван Гог</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Сезанн</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Гоген</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Сёра</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-heading" href="#" data-toogle="dropdown">Авангард
+            <i class="icon-arrow"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Кандинский</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Маринетти</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Малевич</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Пикассо</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-heading" href="#" data-toogle="dropdown">Футуризм
+            <i class="icon-arrow"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Карра</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Прателла</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Северини</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Балла</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form id="form-search" class="form-search">
+        <button id="aside-button_nav" class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
+        <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
+      </form>
+    </div>
+
+      <!-- <div class="container submenu__nav">
         <ul class="submenu-list flex">
           <li class="submenu-item">
             <button class="submenu-button">
@@ -82,7 +150,7 @@
             <button class="submenu-button">
               <h2 class="submenu__heading">Импрессионизм</h2>
               <span class="arrow down"></span>
-            </button>
+            </button> -->
             <!-- <div class="dropdown__nav">
               <ul class="dropdown-list">
                 <li class="dropdown-item dropdown-mone">Моне</li>
@@ -94,12 +162,12 @@
                   <span class="bar__line"></span>
               </div>
             </div> -->
-          </li>
+          <!-- </li>
           <li class="submenu-item">
             <button class="submenu-button">
               <h2 class="submenu__heading">Постимпрессионизм</h2>
               <span class="arrow down"></span>
-            </button>
+            </button> -->
             <!-- <div class="dropdown__nav">
               <ul class="dropdown-list">
                 <li class="dropdown-item dropdown-gog">Ван Гог</li>
@@ -111,12 +179,12 @@
                 <span class="bar__line"></span>
               </div>
             </div> -->
-          </li>
+          <!-- </li>
           <li class="submenu-item">
             <button class="submenu-button">
               <h2 class="submenu__heading">Авангард</h2>
               <span class="arrow down"></span>
-            </button>
+            </button> -->
             <!-- <div class="dropdown__nav">
               <ul class="dropdown-list">
                 <li class="dropdown-item dropdown-kandinskyi">Кандинский</li>
@@ -128,12 +196,12 @@
                 <span class="bar__line"></span>
               </div>
             </div> -->
-          </li>
+          <!-- </li>
           <li class="submenu-item">
             <button class="submenu-button">
               <h2 class="submenu__heading">Футуризм</h2>
               <span class="arrow down"></span>
-            </button>
+            </button> -->
             <!-- <div class="dropdown__nav">
               <ul class="dropdown-list">
                 <li class="dropdown-item dropdown-karra">Карра</li>
@@ -145,13 +213,13 @@
                 <span class="bar__line"></span>
               </div>
             </div> -->
-          </li>
-        </ul>
-        <form id="form-search" class="form-search">
+          <!-- </li>
+        </ul> -->
+        <!-- <form id="form-search" class="form-search">
           <button id="aside-button_nav" class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
           <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
         </form>
-      </div>
+      </div> -->
 
 
       <div class="container">
