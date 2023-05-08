@@ -46,3 +46,15 @@ Element.prototype.hasClass = function (className) {
 
 // submenu.addEventListener('click',showDropdown);
 // close.addEventListener('click', closeDropdown);
+
+//swiper
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 75,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+});

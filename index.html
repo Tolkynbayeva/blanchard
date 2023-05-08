@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blanchard</title>
-  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="" />
+  <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font" type="font/woff2" crossorigin="" />
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="" />
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/normilize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/submenu.css" />
@@ -55,208 +56,382 @@
       </button>
     </div>
   </header>
-
-  <!--submenu-->
-  <section class="section__submenu">
-
-    <div class="container submenu-nav">
-      <ul class="submenu-list">
-        <li class="dropdown">
-          <a class="dropdown-heading" href="#" data-toogle="dropdown">Реализм
-            <i class="icon-arrow"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item dropdown-tintoretto">
-              <a href="#" class="dropdown-link">Тинторетто</a>
-            </li>
-            <li class="dropdown-item dropdown-fridrih ">
-              <a href="#" class="dropdown-link">Фридрих</a>
-            </li>
-            <li class="dropdown-item dropdown-leonardo"><a href="#" class="dropdown-link">Леонардо</a></li>
-            <li class="dropdown-item dropdown-verrokkyo"><a href="#" class="dropdown-link">Верроккьо</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-heading" href="#" data-toogle="dropdown">Импрессионизм
-            <i class="icon-arrow"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Моне</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Сислей</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Мане</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Ренуар</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-heading" href="#" data-toogle="dropdown">Постимпрессионизм
-            <i class="icon-arrow"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Ван Гог</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Сезанн</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Гоген</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Сёра</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-heading" href="#" data-toogle="dropdown">Авангард
-            <i class="icon-arrow"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Кандинский</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Маринетти</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Малевич</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Пикассо</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-heading" href="#" data-toogle="dropdown">Футуризм
-            <i class="icon-arrow"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Карра</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Прателла</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Северини</a></li>
-            <li class="dropdown-item"><a href="#" class="dropdown-link">Балла</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form id="form-search" class="form-search">
-        <button id="aside-button_nav" class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
-        <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
-      </form>
-    </div>
-
-      <!-- <div class="container submenu__nav">
-        <ul class="submenu-list flex">
-          <li class="submenu-item">
-            <button class="submenu-button">
-              <h2 class="submenu__heading">Реализм</h2>
-              <span class="arrow down"></span>
-            </button>
-            <div class="dropdown__nav">
-              <ul class="dropdown-list">
-                <li class="dropdown-item dropdown-tintoretto">Тинторетто</li>
-                <li class="dropdown-item dropdown-fridrih">Фридрих</li>
-                <li class="dropdown-item dropdown-leonardo">Леонардо</li>
-                <li class="dropdown-item dropdown-verrokkyo">Верроккьо</li>
-              </ul>
-              <div class="dropdown__bar bar">
-                <span class="bar__line"></span>
-              </div>
+  <main class="main">
+    <!--submenu-->
+    <section class="section__submenu swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <div class="container submenu-nav">
+            <ul class="submenu-list">
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Реализм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-tintoretto">
+                    <a href="#" class="dropdown-link">Тинторетто</a>
+                  </li>
+                  <li class="dropdown-item dropdown-fridrih">
+                    <a href="#" class="dropdown-link">Фридрих</a>
+                  </li>
+                  <li class="dropdown-item dropdown-leonardo">
+                    <a href="#" class="dropdown-link">Леонардо</a>
+                  </li>
+                  <li class="dropdown-item dropdown-verrokkyo">
+                    <a href="#" class="dropdown-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Импрессионизм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-mone">
+                    <a href="#" class="dropdown-link">Моне</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sisley">
+                    <a href="#" class="dropdown-link">Сислей</a>
+                  </li>
+                  <li class="dropdown-item dropdown-mane">
+                    <a href="#" class="dropdown-link">Мане</a>
+                  </li>
+                  <li class="dropdown-item dropdown-renuar">
+                    <a href="#" class="dropdown-link">Ренуар</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Постимпрессионизм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-gog">
+                    <a href="#" class="dropdown-link">Ван Гог</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sezann">
+                    <a href="#" class="dropdown-link">Сезанн</a>
+                  </li>
+                  <li class="dropdown-item dropdown-gogen">
+                    <a href="#" class="dropdown-link">Гоген</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sera">
+                    <a href="#" class="dropdown-link">Сёра</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Авангард
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-kandinskyi">
+                    <a href="#" class="dropdown-link">Кандинский</a>
+                  </li>
+                  <li class="dropdown-item dropdown-marinetti">
+                    <a href="#" class="dropdown-link">Маринетти</a>
+                  </li>
+                  <li class="dropdown-item dropdown-malevich">
+                    <a href="#" class="dropdown-link">Малевич</a>
+                  </li>
+                  <li class="dropdown-item dropdown-pikasso">
+                    <a href="#" class="dropdown-link">Пикассо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Футуризм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-karra">
+                    <a href="#" class="dropdown-link">Карра</a>
+                  </li>
+                  <li class="dropdown-item dropdown-pratella">
+                    <a href="#" class="dropdown-link">Прателла</a>
+                  </li>
+                  <li class="dropdown-item dropdown-severini">
+                    <a href="#" class="dropdown-link">Северини</a>
+                  </li>
+                  <li class="dropdown-item dropdown-balla">
+                    <a href="#" class="dropdown-link">Балла</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="form-search">
+              <button class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
+              <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
+            </form>
+          </div>
+          <div class="container">
+            <div class="mailing-content">
+              <h1 class="mailing-heading">Прикоснитесь к прекрасному</h1>
+              <p class="mailing-text">
+                Мы вынуждены отталкиваться от того, что реализация намеченных
+                плановых заданий создаёт предпосылки для новых предложений
+              </p>
+              <button class="btn mailing-button_descr">
+                Подписаться на рассылку
+              </button>
             </div>
-          </li>
-          <li class="submenu-item">
-            <button class="submenu-button">
-              <h2 class="submenu__heading">Импрессионизм</h2>
-              <span class="arrow down"></span>
-            </button> -->
-            <!-- <div class="dropdown__nav">
-              <ul class="dropdown-list">
-                <li class="dropdown-item dropdown-mone">Моне</li>
-                <li class="dropdown-item dropdown-sisley">Сислей</li>
-                <li class="dropdown-item dropdown-mane">Мане</li>
-                <li class="dropdown-item dropdown-renuar">Ренуар</li>
-              </ul>
-                <div class="dropdown__bar bar">
-                  <span class="bar__line"></span>
-              </div>
-            </div> -->
-          <!-- </li>
-          <li class="submenu-item">
-            <button class="submenu-button">
-              <h2 class="submenu__heading">Постимпрессионизм</h2>
-              <span class="arrow down"></span>
-            </button> -->
-            <!-- <div class="dropdown__nav">
-              <ul class="dropdown-list">
-                <li class="dropdown-item dropdown-gog">Ван Гог</li>
-                <li class="dropdown-item dropdown-sezann">Сезанн</li>
-                <li class="dropdown-item dropdown-gogen">Гоген</li>
-                <li class="dropdown-item dropdown-sera">Сёра</li>
-              </ul>
-              <div class="dropdown__bar bar">
-                <span class="bar__line"></span>
-              </div>
-            </div> -->
-          <!-- </li>
-          <li class="submenu-item">
-            <button class="submenu-button">
-              <h2 class="submenu__heading">Авангард</h2>
-              <span class="arrow down"></span>
-            </button> -->
-            <!-- <div class="dropdown__nav">
-              <ul class="dropdown-list">
-                <li class="dropdown-item dropdown-kandinskyi">Кандинский</li>
-                <li class="dropdown-item dropdown-marinetti">Маринетти</li>
-                <li class="dropdown-item dropdown-malevich">Малевич</li>
-                <li class="dropdown-item dropdown-pikasso">Пикассо</li>
-              </ul>
-              <div class="dropdown__bar bar">
-                <span class="bar__line"></span>
-              </div>
-            </div> -->
-          <!-- </li>
-          <li class="submenu-item">
-            <button class="submenu-button">
-              <h2 class="submenu__heading">Футуризм</h2>
-              <span class="arrow down"></span>
-            </button> -->
-            <!-- <div class="dropdown__nav">
-              <ul class="dropdown-list">
-                <li class="dropdown-item dropdown-karra">Карра</li>
-                <li class="dropdown-item dropdown-pratella">Прателла</li>
-                <li class="dropdown-item dropdown-severini">Северини</li>
-                <li class="dropdown-item dropdown-balla">Балла</li>
-              </ul>
-              <div class="dropdown__bar bar">
-                <span class="bar__line"></span>
-              </div>
-            </div> -->
-          <!-- </li>
-        </ul> -->
-        <!-- <form id="form-search" class="form-search">
-          <button id="aside-button_nav" class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
-          <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
-        </form>
-      </div> -->
-
-
-      <div class="container">
-        <div class="submenu-descr">
-          <h1 class="submenu-heading">Прикоснитесь к прекрасному</h1>
-          <p class="submenu-text">
-            Мы вынуждены отталкиваться от того, что реализация намеченных
-            плановых заданий создаёт предпосылки для новых предложений
-          </p>
-          <button class="btn submenu-button_descr">
-            Подписаться на рассылку
-          </button>
+          </div>
+        </div>
+        <div class="swiper-slide slide2">
+          <div class="container submenu-nav">
+            <ul class="submenu-list">
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Реализм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-tintoretto">
+                    <a href="#" class="dropdown-link">Тинторетто</a>
+                  </li>
+                  <li class="dropdown-item dropdown-fridrih">
+                    <a href="#" class="dropdown-link">Фридрих</a>
+                  </li>
+                  <li class="dropdown-item dropdown-leonardo">
+                    <a href="#" class="dropdown-link">Леонардо</a>
+                  </li>
+                  <li class="dropdown-item dropdown-verrokkyo">
+                    <a href="#" class="dropdown-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Импрессионизм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-mone">
+                    <a href="#" class="dropdown-link">Моне</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sisley">
+                    <a href="#" class="dropdown-link">Сислей</a>
+                  </li>
+                  <li class="dropdown-item dropdown-mane">
+                    <a href="#" class="dropdown-link">Мане</a>
+                  </li>
+                  <li class="dropdown-item dropdown-renuar">
+                    <a href="#" class="dropdown-link">Ренуар</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Постимпрессионизм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-gog">
+                    <a href="#" class="dropdown-link">Ван Гог</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sezann">
+                    <a href="#" class="dropdown-link">Сезанн</a>
+                  </li>
+                  <li class="dropdown-item dropdown-gogen">
+                    <a href="#" class="dropdown-link">Гоген</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sera">
+                    <a href="#" class="dropdown-link">Сёра</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Авангард
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-kandinskyi">
+                    <a href="#" class="dropdown-link">Кандинский</a>
+                  </li>
+                  <li class="dropdown-item dropdown-marinetti">
+                    <a href="#" class="dropdown-link">Маринетти</a>
+                  </li>
+                  <li class="dropdown-item dropdown-malevich">
+                    <a href="#" class="dropdown-link">Малевич</a>
+                  </li>
+                  <li class="dropdown-item dropdown-pikasso">
+                    <a href="#" class="dropdown-link">Пикассо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Футуризм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-karra">
+                    <a href="#" class="dropdown-link">Карра</a>
+                  </li>
+                  <li class="dropdown-item dropdown-pratella">
+                    <a href="#" class="dropdown-link">Прателла</a>
+                  </li>
+                  <li class="dropdown-item dropdown-severini">
+                    <a href="#" class="dropdown-link">Северини</a>
+                  </li>
+                  <li class="dropdown-item dropdown-balla">
+                    <a href="#" class="dropdown-link">Балла</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="form-search">
+              <button class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
+              <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
+            </form>
+          </div>
+          <div class="container">
+            <div class="mailing-content">
+              <h1 class="mailing-heading">Прикоснитесь к прекрасному</h1>
+              <p class="mailing-text">
+                Мы вынуждены отталкиваться от того, что реализация намеченных
+                плановых заданий создаёт предпосылки для новых предложений
+              </p>
+              <button class="btn mailing-button_descr">
+                Подписаться на рассылку
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="container submenu-nav">
+            <ul class="submenu-list">
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Реализм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-tintoretto">
+                    <a href="#" class="dropdown-link">Тинторетто</a>
+                  </li>
+                  <li class="dropdown-item dropdown-fridrih">
+                    <a href="#" class="dropdown-link">Фридрих</a>
+                  </li>
+                  <li class="dropdown-item dropdown-leonardo">
+                    <a href="#" class="dropdown-link">Леонардо</a>
+                  </li>
+                  <li class="dropdown-item dropdown-verrokkyo">
+                    <a href="#" class="dropdown-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Импрессионизм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-mone">
+                    <a href="#" class="dropdown-link">Моне</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sisley">
+                    <a href="#" class="dropdown-link">Сислей</a>
+                  </li>
+                  <li class="dropdown-item dropdown-mane">
+                    <a href="#" class="dropdown-link">Мане</a>
+                  </li>
+                  <li class="dropdown-item dropdown-renuar">
+                    <a href="#" class="dropdown-link">Ренуар</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Постимпрессионизм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-gog">
+                    <a href="#" class="dropdown-link">Ван Гог</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sezann">
+                    <a href="#" class="dropdown-link">Сезанн</a>
+                  </li>
+                  <li class="dropdown-item dropdown-gogen">
+                    <a href="#" class="dropdown-link">Гоген</a>
+                  </li>
+                  <li class="dropdown-item dropdown-sera">
+                    <a href="#" class="dropdown-link">Сёра</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Авангард
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-kandinskyi">
+                    <a href="#" class="dropdown-link">Кандинский</a>
+                  </li>
+                  <li class="dropdown-item dropdown-marinetti">
+                    <a href="#" class="dropdown-link">Маринетти</a>
+                  </li>
+                  <li class="dropdown-item dropdown-malevich">
+                    <a href="#" class="dropdown-link">Малевич</a>
+                  </li>
+                  <li class="dropdown-item dropdown-pikasso">
+                    <a href="#" class="dropdown-link">Пикассо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-heading" href="#" data-toogle="dropdown">Футуризм
+                  <i class="icon-arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item dropdown-karra">
+                    <a href="#" class="dropdown-link">Карра</a>
+                  </li>
+                  <li class="dropdown-item dropdown-pratella">
+                    <a href="#" class="dropdown-link">Прателла</a>
+                  </li>
+                  <li class="dropdown-item dropdown-severini">
+                    <a href="#" class="dropdown-link">Северини</a>
+                  </li>
+                  <li class="dropdown-item dropdown-balla">
+                    <a href="#" class="dropdown-link">Балла</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form id="form-search" class="form-search">
+              <button id="submenu-button_nav" class="submenu-button_nav" aria-label="Поиск" type="submit"></button>
+              <input class="input-search" placeholder="Поиск по сайту" type="search" name="search" />
+            </form>
+          </div>
+          <div class="container">
+            <div class="mailing-content">
+              <h1 class="mailing-heading">Прикоснитесь к прекрасному</h1>
+              <p class="mailing-text">
+                Мы вынуждены отталкиваться от того, что реализация намеченных
+                плановых заданий создаёт предпосылки для новых предложений
+              </p>
+              <button class="btn mailing-button_descr">
+                Подписаться на рассылку
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-  </section>
-  <!--main-->
-  <main class="main">
+      <div class="swiper-pagination"></div>
+    </section>
     <!--О нас-->
-    <div class="container">
-      <section class="section-us">
-        <h2 class="heading us-heading">О нас</h2>
-        <p class="text us-text">
-          Ясность нашей позиции очевидна: семантический разбор внешних
-          противодействий однозначно определяет каждого участника
-          как способного принимать собственные решения касаемо распределения
-          внутренних резервов и ресурсов. Не следует, однако, забывать,
-          что высококачественный прототип будущего проекта влечёт за собой
-          процесс внедрения и модернизации модели развития. Повседневная
-          практика показывает, что высокое качество позиционных исследований
-          создаёт необходимость включения в производственный план целого ряда
-          внеочередных мероприятий с учётом комплекса распределения внутренних
-          резервов и ресурсов. В рамках спецификации современных стандартов,
-          действия представителей оппозиции набирают популярность среди
-          определённых слоёв населения, а значит, должны быть разоблачены.
-        </p>
-      </section>
-    </div>
+    <section class="section-us container">
+      <h2 class="heading us-heading">О нас</h2>
+      <p class="text us-text">
+        Ясность нашей позиции очевидна: семантический разбор внешних
+        противодействий однозначно определяет каждого участника как способного
+        принимать собственные решения касаемо распределения внутренних
+        резервов и ресурсов. Не следует, однако, забывать,
+        что высококачественный прототип будущего проекта влечёт за собой
+        процесс внедрения и модернизации модели развития. Повседневная
+        практика показывает, что высокое качество позиционных исследований
+        создаёт необходимость включения в производственный план целого ряда
+        внеочередных мероприятий с учётом комплекса распределения внутренних
+        резервов и ресурсов. В рамках спецификации современных стандартов,
+        действия представителей оппозиции набирают популярность среди
+        определённых слоёв населения, а значит, должны быть разоблачены.
+      </p>
+    </section>
     <!--Галерея-->
     <section class="section-gallery">
       <div class="container">
@@ -449,6 +624,7 @@
     </div>
   </main>
 </body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="/script.js"></script>
 
 </html>
