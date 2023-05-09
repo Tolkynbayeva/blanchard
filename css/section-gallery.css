@@ -1,7 +1,115 @@
 .section-gallery {
-  height: 595px;
-  /*временно*/
-  background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
   margin-bottom: 80px;
-  /*при верстке предыдущего раздела может поменяться*/
+  padding: 80px 0;
+  background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
 }
+
+.gallery-list {
+  margin-bottom: 176px;
+}
+
+.gallery-heading {
+  color: var(--color-white);
+}
+
+ .gallery-list-heading {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.gallery-drop-heading {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 40px;
+  padding-top: 3px;
+  padding-left: 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: var(--color-white);
+}
+
+.gallery-icon-arrow {
+  position: absolute;
+  display: inline-block;
+  right: 12px;
+  color: #fff;
+}
+
+.gallery-icon-arrow.gallery-open {
+  transform: rotate(-180deg);
+  transition: transform 0.6s;
+}
+
+.gallery-icon-arrow.gallery-close {
+  transform: rotate(0deg);
+  transition: transform 0.6s;
+}
+
+.gallery-icon-arrow::before {
+  content: url(/img/svg/arrow.svg);
+}
+
+.gallery-drop-menu {
+  max-height: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #000;
+}
+
+.gallery-item-drop {
+  /* width: 400px;
+  height: 40px; */
+  height: 39px;
+  padding-top: 2px;
+  padding-left: 14px;
+  border-bottom: 1px solid #999;
+}
+
+.gallery-drop-link {
+  display: block;
+  /* padding-left: 16px; */
+  color: #999;
+  /* background: #000; */
+}
+
+.gallery-drop .gallery-show,
+.gallery-drop .gallery-hide {
+  transform-origin: 50% 0%;
+  width: 400px;
+  /* height: 300px; */
+  /* padding: 40px; */
+  /* padding-left: 14px; */
+  border: 1px solid #999;
+  /* border-top: transparent; */
+  border-radius: 5px;
+}
+
+.gallery-drop .gallery-show {
+  display: block;
+  max-height: 9999px;
+  transform: scaleY(1);
+  animation: showAnimation 0.5s ease-in-out;
+  transition: max-height 1s ease-in-out;
+}
+
+.gallery-drop .gallery-hide {
+  max-height: 0;
+  transform: scaleY(0);
+  animation: hideAnimation 0.4s ease-out;
+  transition: max-height 0.6s ease-out;
+}
+
+
+
+
+/*
+.gallery-option {
+  width: 400px;
+  height: 40px;
+} */
+

@@ -30,22 +30,24 @@
 
 .icon-arrow {
   position: absolute; 
-  top: -3px;
+  top: -1px;
   right: -16px;
   display: inline-block;
 }
 
 .icon-arrow.open {
-  transform: rotate(-180deg);
   top: 7px;
+  transform: rotate(-180deg);
+  transition: transform 0.6s;
 }
 
 .icon-arrow.close {
   transform: rotate(0deg);
+  transition: transform 0.6s;
 }
 
 .icon-arrow::after {
-  content: "\002304";
+  content: url(/img/svg/arrow.svg);
 }
 
 .dropdown-menu {
@@ -77,10 +79,10 @@
 
 .dropdown .show,
 .dropdown .hide {
-  transform-origin: 50% 0%;
   width: 300px;
   height: 300px;
   padding: 40px;
+  transform-origin: 50% 0%;
 }
 
 .dropdown .show {

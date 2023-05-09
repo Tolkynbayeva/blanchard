@@ -28,25 +28,6 @@ Element.prototype.hasClass = function (className) {
   return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
 };
 
-
-
-// const submenu = document.querySelector('.submenu-button');
-// const close = document.querySelector('.down');
-// const dropdown = document.querySelector('.dropdown__nav');
-// const body = document.body;
-
-// function showDropdown() {
-//   dropdown.classList.add('dropdown--showed');
-//   body.style.overflow = 'hidden';
-// }
-
-// function closeDropdown() {
-//   dropdown.classList.remove('dropdown--showed');
-// }
-
-// submenu.addEventListener('click',showDropdown);
-// close.addEventListener('click', closeDropdown);
-
 //swiper
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
@@ -58,3 +39,33 @@ const swiper = new Swiper('.swiper', {
     clickable: true
   },
 });
+
+// gallery dropdown
+var galleryDrop = document.querySelectorAll('.gallery-drop');
+var galleryArray = Array.prototype.slice.call(galleryDrop, 0);
+galleryArray.forEach(function (el) {
+  var galleryButton = el.querySelector('.gallery-drop-heading'),
+    galleryMenu = el.querySelector('.gallery-drop-menu'),
+    galleryArrow = galleryButton.querySelector('.gallery-icon-arrow');
+
+  galleryButton.onclick = function (event) {
+    if (!galleryMenu.classList.contains('gallery-show')) {
+      galleryMenu.classList.add('gallery-show');
+      galleryMenu.classList.remove('gallery-hide');
+      galleryArrow.classList.add('gallery-open');
+      galleryArrow.classList.remove('gallery-close');
+      event.preventDefault();
+    }
+    else {
+      galleryMenu.classList.remove('gallery-show');
+      galleryMenu.classList.add('gallery-hide');
+      galleryArrow.classList.remove('gallery-open');
+      galleryArrow.classList.add('gallery-close');
+      event.preventDefault();
+    }
+  };
+});
+
+Element.prototype.hasClass = function (className) {
+  return this.classList.contains(className);
+};
