@@ -34,10 +34,9 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   spaceBetween: 75,
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
 });
 
 // gallery dropdown
@@ -69,3 +68,19 @@ galleryArray.forEach(function (el) {
 Element.prototype.hasClass = function (className) {
   return this.classList.contains(className);
 };
+
+// galery swiper
+var gallerySwiper = new Swiper('.gallery-swiper', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 75,
+
+  pagination: {
+    el: '.gallery-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.gallery-button-next',
+    prevEl: '.gallery-button-prev',
+  },
+});

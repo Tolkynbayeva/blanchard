@@ -412,7 +412,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
     </section>
     <!--О нас-->
     <section class="container section-us">
@@ -434,23 +434,79 @@
     </section>
     <!--Галерея-->
     <section class="section-gallery">
-      <div class="container">
-        <h2 class="heading gallery-heading">Галерея</h2>
-        <h3 class="gallery-list-heading">Фильтр:</h3>
-        <ul class="gallery-list">
-          <li class="gallery-drop">
-            <a class="gallery-drop-heading" href="#" data-toogle="gallery-dropdown">Живопись
-            <i class="gallery-icon-arrow"></i> </a>
-            <ul class="gallery-drop-menu">
-              <li class="gallery-item-drop">
-                <a href="#" class="gallery-drop-link">Рисунок</a>
+      <div class="container gallery-content">
+        <div class="gallery-left">
+          <h2 class="heading gallery-heading">Галерея</h2>
+          <h3 class="gallery-list-heading">Фильтр:</h3>
+          <ul class="gallery-list">
+            <li class="gallery-drop">
+              <a class="gallery-drop-heading" href="#" data-toogle="gallery-dropdown">Живопись
+              <i class="gallery-icon-arrow"></i> </a>
+              <ul class="gallery-drop-menu">
+                <li class="gallery-item-drop">
+                  <a href="#" class="gallery-drop-link">Рисунок</a>
+                </li>
+                <li class="gallery-item-drop">
+                  <a href="#" class="gallery-drop-link">Скульптура</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="gallery-radio">
+            <label class="gallery-label">
+              <input type="radio" name="period" class="gallery-input-radio">
+              <span class="gallery-radio-text">XIX век</span>
+            </label>
+            <label class="gallery-label">
+              <input type="radio" name="period" class="gallery-input-radio" checked>
+              <span class="gallery-radio-text">XX век</span>
+            </label>
+            <label class="gallery-label">
+              <input type="radio" name="period" class="gallery-input-radio">
+              <span class="gallery-radio-text">Современность</span>
+            </label>
+          </div>  
+        </div>
+
+        <div class="swiper gallery-swiper">
+          <div class="gallery-button-next"></div>
+          <div class="gallery-button-prev"></div>
+          <div class="gallery-pagination">
+            <span class="gallery-pagination-current">1</span>/
+            <span class="gallery-pagination-total">2</span>
+          </div>      
+
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>       -->
+          <div class="swiper-wrapper">
+            <ul class="gallery-slaider swiper-slide">
+              <li class="gallery-item-slider">
+                <a href="#" class="gallery-item-link gallery1"></a>
               </li>
-              <li class="gallery-item-drop">
-                <a href="#" class="gallery-drop-link">Скульптура</a>
+              <li class="gallery-item-slider">
+                <a href="#" class="gallery-item-link gallery2"></a>
               </li>
-            </ul>
-          </li>
-        </ul>
+              <li class="gallery-item-slider">
+                <a href="#" class="gallery-item-link gallery3"></a>
+              </li>
+            </ul> 
+            <ul class="gallery-slaider swiper-slide">
+              <li class="gallery-item-slider">
+                <a href="#" class="gallery-item-link gallery4"></a>
+              </li>
+              <li class="gallery-item-slider">
+                <a href="#" class="gallery-item-link gallery5"></a>
+              </li>
+              <li class="gallery-item-slider">
+                <a href="#" class="gallery-item-link gallery6"></a>
+              </li>
+            </ul>  
+ 
+          </div>
+        </div>
+
+
         </div>
     </section>
     <!--Каталог-->

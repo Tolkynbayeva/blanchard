@@ -4,6 +4,14 @@
   background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
 }
 
+.gallery-content {
+  display: flex;
+}
+
+.gallery-left {
+  margin-right: 50px;
+}
+
 .gallery-list {
   margin-bottom: 176px;
 }
@@ -62,8 +70,6 @@
 }
 
 .gallery-item-drop {
-  /* width: 400px;
-  height: 40px; */
   height: 39px;
   padding-top: 2px;
   padding-left: 14px;
@@ -72,20 +78,14 @@
 
 .gallery-drop-link {
   display: block;
-  /* padding-left: 16px; */
   color: #999;
-  /* background: #000; */
 }
 
 .gallery-drop .gallery-show,
 .gallery-drop .gallery-hide {
   transform-origin: 50% 0%;
   width: 400px;
-  /* height: 300px; */
-  /* padding: 40px; */
-  /* padding-left: 14px; */
   border: 1px solid #999;
-  /* border-top: transparent; */
   border-radius: 5px;
 }
 
@@ -104,12 +104,157 @@
   transition: max-height 0.6s ease-out;
 }
 
+.gallery-label {
+  display: block;
+  user-select: none;
+  cursor: pointer;
+}
+
+.gallery-input-radio {
+  position: absolute;
+  appearance: none;
+}
+
+.gallery-radio-text {
+  position: relative;
+  padding-left: 25px;
+  color: var(--color-white);
+}
+
+.gallery-radio-text::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 53%;
+  width: 12px;
+  height: 12px;
+  outline: 1px solid #fff;
+  transform: translateY(-50%);
+}
+
+.gallery-radio-text::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 46%;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #C283F3;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-input-radio:checked + .gallery-radio-text::after {
+  opacity: 1;
+}
+
+.gallery-input-radio:checked + .gallery-radio-text::before {
+  outline: 1px solid #C283F3;
+}
+
+.gallery-slaider {
+  display: flex;
+  height: 350px;
+  margin-top: 25px;
+}
+
+.gallery-item-slider:not(:last-child) {
+  margin-right: 50px;
+}
+
+.gallery-item-link {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery-item-link:hover::before {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-image: url(/img/svg/hover-gallery.svg);
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+}
+
+.gallery1 {
+  background-image: url(/img/gallery1.png);
+}
+
+.gallery2 {
+  background-image: url(/img/gallery2.png);
+}
+
+.gallery3 {
+  background-image: url(/img/gallery3.png);
+}
+
+.gallery4 {
+  background-image: url(/img/gallery4.png);
+}
+
+.gallery5 {
+  background-image: url(/img/gallery5.png);
+}
+
+.gallery6 {
+  background-image: url(/img/gallery6.png);
+}
 
 
+ .gallery-button-next, .gallery-button-prev { 
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #999;
+  border-radius: 50px;
+ }
 
-/*
-.gallery-option {
-  width: 400px;
-  height: 40px;
-} */
+.gallery-button-prev {
+  top: -5px;
+  left: 4px;
+  transform: rotate(90deg);
+} 
+
+.gallery-button-next {
+  top: 25px;
+  left: 4px;
+  transform: rotate(-90deg);
+}
+
+.gallery-button-prev::before {
+  content: url(/img/svg/arrow.svg);
+  position: absolute;
+  top: -2px;
+  left: 9px;
+}
+
+.gallery-button-next::before {
+  content: url(/img/svg/arrow.svg);
+  position: absolute;
+  top: -2px;
+  left: 9px;
+}
+
+
+.gallery-button-next {
+  top: 25px;
+  left: 104px;
+} 
+
+.gallery-pagination {
+  position: absolute;
+  width: 46px;
+  top: 25px;
+  left: 52px;
+  color: var(--color-white);
+}
+
 
