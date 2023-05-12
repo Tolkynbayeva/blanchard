@@ -122,6 +122,10 @@ body {
   border-radius: 100px;
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 .heading {
   margin-bottom: 16px;
   font-weight: 400;

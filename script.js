@@ -84,3 +84,20 @@ var gallerySwiper = new Swiper('.gallery-swiper', {
     prevEl: '.gallery-button-prev',
   },
 });
+
+//gallery click
+document.addEventListener('DOMContentLoaded', function() {
+  var gallery2 = document.getElementById('gallery2');
+  var gallery2Content = document.querySelector('.gallery2-content');
+  var closeBtn = gallery2Content.querySelector('.gallery__close');
+  
+  gallery2.addEventListener('click', function(event) {
+    event.preventDefault();
+    gallery2Content.classList.add('open');
+  });
+  
+  closeBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    gallery2Content.classList.remove('open');
+  });
+});
